@@ -1,0 +1,13 @@
+name: ClearChat
+main: ir.yzplug.ClearChat.ClearChat
+description: Clear the chat!
+author: YazdanPlug
+version: '1.0.0'
+api: '1.0.11'
+commands:
+  clearchat:
+    aliases: [ChatClear, cc]
+    description: Clear the chat!
+permissions:
+  clearchat.use:
+    default: op
