@@ -12,6 +12,10 @@ public class ClearChat extends PluginBase {
         this.saveDefaultConfig();
         this.getLogger().info("This Plugin Enabled!");
     }
+    
+    @Override
+    public void onDisable() { this.getLogger().info("This Plugin Disabled!"); 
+                            }
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof Player) {
@@ -34,6 +38,4 @@ public class ClearChat extends PluginBase {
             return true;
         }
     }
-    @Override
-    public void onDisable() { this.getLogger().info("This Plugin Disabled!"); }
 }
